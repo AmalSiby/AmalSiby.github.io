@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+}
+/*NavBar*/
+#menu {
+  background-color: rgb(5, 5, 5);
+  opacity: 0.9;
+}
+ul.navbar-nav {
+  float: right;
+  text-align: center;
+}
+ul.navbar-nav li {
+  padding: 0 10px;
+}
+@media only screen and (max-width: 767px) {
+  ul.navbar-nav {
+    float: none;
+  }
+}
+.container-fluid {
+  padding: 0 1em;
+}
+.navbar-nav li a {
+  color: white !important;
+  font-size: 1.2em;
+  font-family: Century gothic, sans-serif;
+  font-weight: 600;
+  transition: 0.4s ease;
+}
+.navbar-nav li a:hover {
+  color: rgb(5, 5, 5) !important;
+  background-color: rgb(248, 242, 242) !important;
+}
+.navbar-brand {
+  padding: 10px 15px !important;
+}
+a.navbar-brand .fa-home {
+  font-size: 30px;
+  color: rgb(228, 225, 225);
+  transition: 0.5s ease;
+}
+a.navbar-brand .fa-home:hover {
+  color: #7e7e7e;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: rgb(252, 252, 252) !important;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: rgb(19, 18, 18) !important;
+}
+
+/*Home*/
+.container {
+  margin: 0 auto;
+  max-width: 996px;
+}
+.splash {
+  background-size: cover;
+  color: rgb(8, 8, 8);
+}
+
+.splash .container {
+  padding-top: 15vh;
+  padding-bottom: 10vh;
+}
+
+.profile-image {
+  border-radius: 50%;
+  display: block;
+  max-height: 250px;
+  max-width: 250px;
+  margin: 0 auto 1em;
+  width: 100%;
+}
+
+.splash h1 {
+  font-size: 35px;
+  margin-bottom: 0.15em;
+  text-align: center;
+}
+
+.splash .lead,
+.splash .continue {
+  display: inline-block;
+  text-align: center;
+}
+h1.intro-text {
+  margin: 0;
+  color: rgb(0, 0, 0);
+}
+.splash .lead {
+  font-size: 25px;
+  margin-bottom: 1em;
+  font-family: Rockwell;
+}
+.splash .continue {
+  font-size: 3em;
+  display: block;
+}
+
+.splash .continue a {
+  border: 2px solid rgb(5, 5, 5);
+  border-radius: 100%;
+  color: rgb(15, 15, 15);
+  display: inline-block;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+}
+.splash .continue a:hover {
+  background-color: rgba(104, 100, 100, 0.89);
+}
+/*About*/
+#about,
+#portfolio,
+#contact {
+  padding-top: 4em !important;
+}
+section h2 {
+  margin: 0;
+  font-size: 3em;
+}
+section.success {
+  color: #fff;
+  background: rgb(30, 74, 112);
+  padding: 2%;
+}
+section.success p {
+  font-size: 1.5em;
+}
+section.success a {
+  color: black;
+  transition: 0.4s ease;
+}
+section.success a:hover {
+  outline: 0;
+  color: #fff;
+  border: 2px solid #fff;
+}
+/*Portfolio*/
+#portfolio {
+  padding-bottom: 30px;
+}
+#portfolio h1 {
+  color: black;
+}
+.img-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.grid-item {
+  width: 300px;
+  max-height: 200px;
+  margin: 0 30px 30px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+img {
+  display: block;
+  max-width: 100%;
+  transition: all 0.3s;
+}
+.grid-item:hover {
+  outline: 5px solid white;
+  outline-offset: 5px;
+}
+.grid-item:hover img {
+  transform: scale(1.05);
+  opacity: 0.6;
+}
+.overlay {
+  position: absolute;
+  width: 300px;
+  max-height: 50px;
+  transition: 0.5s ease;
+  background-color: #fffdfd;
+}
+
+.grid-item:hover .overlay {
+  opacity: 1;
+}
+
+.text a,
+p {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0.8;
+}
+
+/*Contact*/
+.contact-button {
+  padding-bottom: 2%;
+}
+.contact-me-container {
+  padding: 3%;
+  background: rgb(30, 74, 112);
+}
+
+.submit-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*Footer*/
+
+footer {
+  background-color: #1d2d3d;
+  color: #fff;
+  font-size: 1.25em;
+  text-align: center;
+  padding: 3%;
+}
+a.social-button {
+  background: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+a.link-twitter,
+a.link-linkedin,
+a.link-github {
+  transition: 0.4s ease;
+}
+a.link-twitter {
+  color: #1da1f2;
+}
+a.link-linkedin {
+  color: #007bb6;
+}
+
+a.link-twitter:hover {
+  background-color: #1da1f2;
+  color: #fff;
+}
+
+a.link-linkedin:hover {
+  background-color: #007bb6;
+  color: #fff;
+}
+
+a.link-github:hover {
+  background-color: #353535;
+  color: #fff;
+}
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: transparent !important;
+}
+.fa-heart {
+  color: #f32323;
+}
+h4.author {
+  letter-spacing: 4px;
+}
+hr.footer-hr {
+  width: 150px;
+}
+hr.copyright {
+  opacity: 0.4;
+}
